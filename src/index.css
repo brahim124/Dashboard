@@ -9,3 +9,92 @@ body{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {font-family: Arial, Helvetica;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.buttonlogin {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn1 {
+  width: auto;
+  padding: 8px 14px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.image {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 40px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.sign{
+    float:right;
+    padding:2px 50px ;
+    padding-bottom: 0px;
+  }
+  .signlink {
+    float:right;
+    padding:20px 60px ;
+    padding-bottom: 10px;
+
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.signupbtn {
+  background-color: #04AA6D;
+  padding: 14px 20px;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+

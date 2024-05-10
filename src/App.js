@@ -2,14 +2,15 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi'; 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import {Navbar, footer, Sidebar, ThemeSettings} from './components';
+import {Navbar,Login,SignUp, Sidebar, ThemeSettings} from './components';
 import {Acceuil, Clients } from './pages';
 import {AppContext} from './contexts/contextProvider';
 import './app.css';
 import Coachs from './pages/Coachs';
+//import Axios from 'axios';
 const App = () => {
   const {activeMenu, themeSettings,setThemeSettings, currentColor,currentMode } = AppContext();
-
+ // Axios.get("https").then((res)=>{console.log(res.data)}) 
   return (
     <div className={currentMode==='Dark'? 'dark':''}>
       <BrowserRouter>
@@ -31,8 +32,10 @@ const App = () => {
             {/*pages*/}
             <Route path="/coachs" element={<Coachs />}/>
             <Route path="/clients" element={<Clients />}/>
-            <Route path="/rrrr" element={<rrrr />}/>
-            </Routes></div></div></div></BrowserRouter>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/signUp" element={<SignUp />}/>
+            </Routes>
+            </div></div></div></BrowserRouter>
     </div>
   )
 }
